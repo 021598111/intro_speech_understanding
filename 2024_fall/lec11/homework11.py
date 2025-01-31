@@ -14,3 +14,13 @@ def transcribe_wavefile(filename, language='en'):
     text (str) - the recognized speech
     '''
     raise RuntimeError("FAIL!!  You need to change this function so it works!")
+    r=spdeech_recognition.Recognizer()
+
+
+with speech_recognition.AudioFile("264752__copyc4t__phone-messages-english-and-italin.flas")as source:
+    audio =r.record(source)
+    text=r.recognize_google(audio,language=language)
+
+return text
+   
+ 
