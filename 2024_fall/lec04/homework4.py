@@ -7,7 +7,7 @@ def list_to_dict(input_list):
     '''
     newdict={ }
     for n,v  in enumerate( imput-list)
-                        newdict[n]=v
+    newdict[n]=v
     return newdict
 
 
